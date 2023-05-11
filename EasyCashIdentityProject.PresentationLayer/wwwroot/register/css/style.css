@@ -103,16 +103,16 @@ input[type="text"], input[type="password"], input[type="email"]{
 	font-family: 'Quicksand', sans-serif;
 }
 input[type="text"]{
-	background: url("../images/user.png") no-repeat 382px 11px;
+	background: url("../images/user.png") no-repeat 96% 11px;
 	background-size: 25px;
 }
 input[type="email"] {
-	background: url("../images/e-mail.png") no-repeat 382px 11px;
+	background: url("../images/e-mail.png") no-repeat 96% 11px;
 	background-size: 25px;
 }
 
 input[type="password"] {
-	background: url("../images/password.png") no-repeat 382px 11px;
+	background: url("../images/password.png") no-repeat 96% 11px;
 	background-size: 25px;
 }
 
@@ -476,11 +476,11 @@ input[type="checkbox"] {
 		padding: 13px 8px 13px;
 	}
 	input[type="email"] {
-		background: url(../images/e-mail.png) no-repeat 300px 11px;
+		background: url(../images/e-mail.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	input[type="password"] {
-		background: url(../images/password.png) no-repeat 300px 11px;
+		background: url(../images/password.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	ul.agileinfotickwthree a {
@@ -493,7 +493,7 @@ input[type="checkbox"] {
 		padding-left: 35px;
 	}
 	input[type="text"] {
-		background: url(../images/user.png) no-repeat 300px 11px;
+		background: url(../images/user.png) no-repeat 96% 11px;
 		background-size: 25px;
 	}
 }
@@ -507,11 +507,11 @@ input[type="checkbox"] {
 		letter-spacing: 3px;
 	}
 	input[type="email"] {
-		background: url(../images/e-mail.png) no-repeat 255px 11px;
+		background: url(../images/e-mail.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	input[type="password"] {
-		background: url(../images/password.png) no-repeat 255px 11px;
+		background: url(../images/password.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	.aitssendbuttonw3ls p {
@@ -526,7 +526,7 @@ input[type="checkbox"] {
 		letter-spacing: 0px;
 	}
 	input[type="text"] {
-		background: url(../images/user.png) no-repeat 254px 11px;
+		background: url(../images/user.png) no-repeat 96% 11px;
 		background-size: 25px;
 	}
 	.contact-w3-agileits h3 {
@@ -588,11 +588,11 @@ input[type="checkbox"] {
 		padding: 20px 15px;
 	}
 	input[type="email"] {
-		background: url(../images/e-mail.png) no-repeat 230px 11px;
+		background: url(../images/e-mail.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	input[type="password"] {
-		background: url(../images/password.png) no-repeat 230px 11px;
+		background: url(../images/password.png) no-repeat 96% 11px;
 		background-size: 23px;
 	}
 	ul.agileinfotickwthree li input[type="checkbox"]+label span:first-child {
@@ -622,7 +622,7 @@ input[type="checkbox"] {
 		border: none;
 	}
 	input[type="text"] {
-		background: url(../images/user.png) no-repeat 229px 11px;
+		background: url(../images/user.png) no-repeat 96% 11px;
 		background-size: 25px;
 	}
 	.contact-form1 {
