@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.DtoLayer.Dtos.AppUserDtos
 {
-    internal class AppUserRegisterDto
+    public class AppUserRegisterDto
     {
         [Required(ErrorMessage ="Ad yazmaq məcburiyyətindəsiniz!")]
         [Display(Name ="Ad:")]
