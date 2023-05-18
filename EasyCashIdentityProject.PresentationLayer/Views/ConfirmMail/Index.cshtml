@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <h2>Daşınan e-poçt ünvanı: @ViewBag.Email</h2>
+                <label>İstifadəçi ID dəyəri: </label>
+                <input type="text" class="form-control" />
+                <br />
+                <label>E-poçt ünvanınıza gələn 6 rəqəmli kodu daxil edin: </label>
+                <input type="text" class="form-control" />
+                <br />
+                <button class="btn btn-primary">Hesabı aktifləşdir</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
