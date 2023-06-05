@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EasyCashIdentityProject.EntityLayer.Concrete
+﻿namespace EasyCashIdentityProject.EntityLayer.Concrete
 {
     public class CustomerAccount
     {
@@ -16,5 +10,8 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
 
         public int AppUserID { get; set; }
         public AppUser AppUser { get; set; }
+
+        public List<CustomerAccountProcess> CustomerSender { get; set; }
+        public List<CustomerAccountProcess> CustomerReceiver { get; set; }
     }
 }
