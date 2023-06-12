@@ -32,12 +32,20 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
             var receiverAccountNumberID = context.CustomerAccounts.Where(x => x.CustomerAccountNumber == sendMoneyForCustomerAccountProcessDto.ReceiverAccountNumber).Select(y => y.CustomerAccountID).FirstOrDefault();
 
-            sendMoneyForCustomerAccountProcessDto.SenderID = user.Id;
-            sendMoneyForCustomerAccountProcessDto.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-            sendMoneyForCustomerAccountProcessDto.ProcessType = "Havale";
-            sendMoneyForCustomerAccountProcessDto.ReciverID = receiverAccountNumberID;
+            //sendMoneyForCustomerAccountProcessDto.SenderID = user.Id;
+            //sendMoneyForCustomerAccountProcessDto.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            //sendMoneyForCustomerAccountProcessDto.ProcessType = "Havale";
+            //sendMoneyForCustomerAccountProcessDto.ReciverID = receiverAccountNumberID;
 
-            //_customerAccountProcessService.TInsert();
+            var values = new CustomerAccountProcess();
+            values.ProcessDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            // burdan senderId-di deyil de, gonderilecek hesab nomresi olmalidi
+            values.SenderID = 1;
+            values.ProcessType = "Havale";
+            values.ReciverID = receiverAccountNumberID;
+            values.Amount = sendMoneyForCustomerAccountProcessDto.Amount;
+
+            _customerAccountProcessService.TInsert(values);
 
             return RedirectToAction("Index", "Deneme");
         }
